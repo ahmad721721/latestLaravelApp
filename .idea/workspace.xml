@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5273d877-1dd1-44ae-9c4b-d8fd22bc4527" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_06_095806_create_photos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_06_095806_create_photos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +179,11 @@
       <workItem from="1591411377007" duration="62000" />
       <workItem from="1591411479312" duration="9005000" />
       <workItem from="1591552106754" duration="1654000" />
+      <workItem from="1591595330573" duration="2064000" />
+      <workItem from="1591631925039" duration="1433000" />
+      <workItem from="1591700320731" duration="944000" />
+      <workItem from="1591707935286" duration="770000" />
+      <workItem from="1591711920532" duration="944000" />
     </task>
     <servers />
   </component>
@@ -221,13 +227,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="260" y="22" width="1366" height="1058" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591554952924" />
-    <state x="506" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1591552119907">
+    <state x="506" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1591711930955">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="506" y="277" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591552119907" />
-    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1591342277241">
+    <state x="506" y="277" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591711930955" />
+    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1591704609928">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1591342277241" />
+    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1591704609928" />
   </component>
 </project>

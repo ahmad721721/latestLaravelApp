@@ -20,8 +20,8 @@
             {!!   Form::select('is_active',array(1=>'Active',0=>'Not Active') ,0, ['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-                {!!   Form::label('file','Name', ['class'=>'offset-4']) !!}
-                {!! Form::file('file', null, ['class'=>'form-control']) !!}
+                {!!   Form::label('photo_id','Photo:', ['class'=>'offset-4']) !!}
+                {!! Form::file('photo_id', null, ['class'=>'form-control']) !!}
                 </div>
              {{csrf_field()}}
     <div class="form-group">

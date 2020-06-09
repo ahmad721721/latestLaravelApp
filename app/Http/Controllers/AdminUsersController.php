@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UsersRequest;
+use App\Photo;
 use App\Role;
 use App\User;
 use Illuminate\Http\Request;
@@ -38,14 +39,25 @@ class AdminUsersController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     //created my manual UsersRequest for validation purposes
     public function store(UsersRequest $request)
     {
         //gets form data and save it,
-        User::create($request->all());
+        //User::create($request->all());
         //and then goes to show all users
+        //return redirect('/admin/users');
+        $input = $request->all();
+        if($file = $request->file('photo_id'));
+        {
+            $name = time().$file->getClientOriginalName();
+            $file->move('images', $name);
+            $photo = Photo::create(['file'=>$name]);
+            $input['photo_id'] = $photo->id;
+        }
+        $input['password'] = bcrypt($request->password);
+        User::create($input);
         return redirect('/admin/users');
     }
 
