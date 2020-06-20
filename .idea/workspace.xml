@@ -4,8 +4,10 @@
     <list default="true" id="5273d877-1dd1-44ae-9c4b-d8fd22bc4527" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminUsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -183,12 +199,33 @@
       <workItem from="1591631925039" duration="1433000" />
       <workItem from="1591700320731" duration="944000" />
       <workItem from="1591707935286" duration="770000" />
-      <workItem from="1591711920532" duration="944000" />
+      <workItem from="1591711920532" duration="6285000" />
+      <workItem from="1591774864532" duration="715000" />
+      <workItem from="1591778612991" duration="173000" />
+      <workItem from="1591778887191" duration="5049000" />
+      <workItem from="1591786147973" duration="3012000" />
+      <workItem from="1592219236131" duration="670000" />
+      <workItem from="1592336157294" duration="3442000" />
+      <workItem from="1592604806414" duration="625000" />
+      <workItem from="1592668887372" duration="1410000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="0" width="1216" height="1080" key="#Intentions" timestamp="1591315408538">
@@ -203,10 +240,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="433" y="211" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591314993494" />
-    <state x="640" y="178" key="FileChooserDialogImpl" timestamp="1591330507700">
+    <state x="640" y="178" key="FileChooserDialogImpl" timestamp="1591808766957">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="640" y="178" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591330507700" />
+    <state x="640" y="178" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1591808766956" />
     <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1591160308933">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -227,13 +264,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="260" y="22" width="1366" height="1058" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1591554952924" />
-    <state x="506" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1591711930955">
+    <state x="506" y="277" key="com.intellij.ide.util.TipDialog" timestamp="1592668888641">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="506" y="277" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1591711930955" />
-    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1591704609928">
+    <state x="506" y="277" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592668888641" />
+    <state x="453" y="0" width="1009" height="1076" key="search.everywhere.popup" timestamp="1591784365129">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="453" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1591704609928" />
+    <state x="453" y="0" width="1009" height="1076" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1591784365129" />
   </component>
 </project>
