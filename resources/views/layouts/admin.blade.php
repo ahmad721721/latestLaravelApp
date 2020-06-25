@@ -54,16 +54,31 @@
             <!-- /.dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    @yield('userName')
                     <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="dropdown-menu dropdown-user " style="height: 94px;">
                     <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                     </li>
-                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
+
+
+                    <li>
+                         <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                             <i class="fa fa-sign-out fa-fw"></i>{{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+
+
+
                     </li>
-{{--                    <li class="divider"></li>--}}
-                    <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                    </li>
+
+
                 </ul>
                 <!-- /.dropdown-user -->
             </li>
@@ -121,14 +136,14 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
+                        <a href=""><i class="fa fa-wrench fa-fw"></i>Users<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-{{--                                <a href="{{route('admin.users.index')}}">All Users</a>--}}
+                                <a href="{{route('admin.users.index')}}">All Users</a>
                             </li>
 
                             <li>
-{{--                                <a href="{{route('admin.users.create')}}">Create User</a>--}}
+                                <a href="{{route('admin.users.create')}}">Create User</a>
                             </li>
 
                         </ul>
@@ -136,14 +151,14 @@
                     </li>
 
                     <li>
-                        <a href="#"><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
+                        <a href=""><i class="fa fa-wrench fa-fw"></i> Posts<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="/posts">All Posts</a>
+                                <a href="{{route('admin.posts.index')}}">All Posts</a>
                             </li>
 
                             <li>
-                                <a href="/posts/create">Create Post</a>
+                                <a href="{{route('admin.posts.create')}}">Create Post</a>
                             </li>
 
                         </ul>

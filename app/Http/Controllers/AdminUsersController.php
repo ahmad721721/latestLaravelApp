@@ -8,13 +8,14 @@ use App\Photo;
 use App\Role;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class AdminUsersController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function index()
     {
@@ -26,7 +27,7 @@ class AdminUsersController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
@@ -129,10 +130,17 @@ class AdminUsersController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function destroy($id)
     {
-        //
+        //deletes user without image file
+        //User::findOrFail($id)->delete();
+        $user = User::findOrFail($id);
+        //to delete the image file from public/images folder
+        unlink(public_path().$user->photo->file);
+        $user->delete();
+        Session::flash('deleted_user','User has been successfully deleted');
+      return redirect('/admin/users');
     }
 }
